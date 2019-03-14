@@ -1,0 +1,27 @@
+import openpyxl
+import requests
+
+BASE_URL="https://api.hubapi.com/"
+API_KEY="bd123424-645f-4080-bba9-7f8c5b33dc59"
+
+xl=openpyxl.load_workbook("XL_Driver.xlsx")
+sheet=xl["SmokeTest"]
+TCID=1
+DESC=2
+MODULE=3
+METHOD=4
+URL=5
+INPUTJSON=6
+EXPRC=7
+EXPJSON=8
+
+for i in range(2,sheet.max_row+1):
+    cell=sheet.cell(row=i,column=URL)
+    REQUEST_URL=BASE_URL+str(cell.value)+API_KEY
+    print(REQUEST_URL)
+    res=requests.get(REQUEST_URL)
+    try:
+        assert res.status_code==sheet.cell(i,EXPRC).value
+    except:
+        print("Test FAILED due to Assertion Error - ",sheet.cell(i,TCID).value)
+

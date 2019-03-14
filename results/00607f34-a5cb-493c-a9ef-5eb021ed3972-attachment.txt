@@ -1,0 +1,19 @@
+Test PASSED -  101
+Test PASSED -  102
+Test PASSED -  103
+Test FAILED due to Assertion Error -  104
+Exp Value:  200  Actual Value:  404
+Test FAILED due to Assertion Error -  105
+Exp Value:  200  Actual Value:  404
+{'properties': [{'property': 'email', 'value': 'kankishore14@gmail.com'}, {'property': 'firstname', 'value': 'Kishore12'}, {'property': 'lastname', 'value': 'KAN'}, {'property': 'company', 'value': 'SA'}]}
+<class 'dict'>
+{'property': 'firstname', 'value': 'Kishore12'}
+{"message":"Contact already exists","identityProfile":{"vid":7651,"identity":[{"value":"kankishore14@gmail.com","type":"EMAIL","timestamp":1552152704958,"isPrimary":true},{"value":"adb196d3-9d03-4f4e-bc50-c2b3b5a92d35","type":"LEAD_GUID","timestamp":1552152705020}],"linkedVid":[],"isContact":true,"savedAtTimestamp":1552152705023},"status":"error","correlationId":"90d531a6-6177-4a35-a027-f30fbb7532e8","error":"CONTACT_EXISTS","requestId":"6191592a65fa143e59bafea085811341"}
+Test FAILED due to Assertion Error -  106
+Exp Value:  200  Actual Value:  409
+{'properties': [{'property': 'email', 'value': 'mallikarjun14@gmail.com'}, {'property': 'firstname', 'value': 'Mallikarjun12'}, {'property': 'lastname', 'value': 'BHC'}, {'property': 'company', 'value': 'Harman'}]}
+<class 'dict'>
+{'property': 'firstname', 'value': 'Mallikarjun12'}
+{"message":"Contact already exists","identityProfile":{"vid":7701,"identity":[{"value":"mallikarjun14@gmail.com","type":"EMAIL","timestamp":1552152706016,"isPrimary":true},{"value":"a05cae36-e60a-40ea-8ef8-d7b82ceb13ef","type":"LEAD_GUID","timestamp":1552152706045}],"linkedVid":[],"isContact":true,"savedAtTimestamp":1552152706048},"status":"error","correlationId":"edaacab9-d2be-4394-9123-a7431d90a455","error":"CONTACT_EXISTS","requestId":"f94538e36900e77f69774da8c909779e"}
+Test FAILED due to Assertion Error -  107
+Exp Value:  200  Actual Value:  409

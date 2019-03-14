@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "property": "email",
+      "value": "mallikarjuna@hubspot.com"
+    },
+    {
+      "property": "firstname",
+      "value": "Mallikarjuna"
+    },
+    {
+      "property": "lastname",
+      "value": "BCH"
+    }
+  ]
+}
